@@ -1,0 +1,21 @@
+#about-view{
+  #myImage{
+    border-radius: 250px;
+    display: block;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-family: $font-stack1;
+    font-size: 3vw;
+    margin-left: 5%;
+  }
+  .aboutMeStuff{
+    font-family: $font-stack1;
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+}
