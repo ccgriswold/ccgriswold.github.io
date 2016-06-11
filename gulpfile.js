@@ -6,20 +6,20 @@ var ngAnnotate  = require('gulp-ng-annotate');
 var gulpBrowser = require("gulp-browser");
 var uglify      = require('gulp-uglify');
 // var gulpPug    = require('gulp-pug');
-var gulpJade    = require('gulp-jade');
+// var gulpJade    = require('gulp-jade');
 // var duration    = require('gulp-duration');
 
 gulp.task('default', ['html', 'pageviews', 'css', 'js', 'images']);
 
 gulp.task('html', function() {
-   return gulp.src('./*.jade')
-      .pipe(gulpJade())
+   return gulp.src('./*.html')
+      // .pipe(gulpJade())
       .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('pageviews', function() {
-   return gulp.src('./pageviews/*.jade')
-      .pipe(gulpJade())
+   return gulp.src('./pageviews/*.html')
+      // .pipe(gulpJade())
       .pipe(gulp.dest('./public/pageviews'));
 });
 
@@ -49,8 +49,8 @@ gulp.task('images', function() {
 });
 
 gulp.task('watch', function() {
-   gulp.watch('./*.jade', ['html']);
-   gulp.watch('./pageviews/*.jade', ['pageviews']);
+   gulp.watch('./*.html', ['html']);
+   gulp.watch('./pageviews/*.html', ['pageviews']);
    gulp.watch('./scss/*.scss', ['css']);
    gulp.watch('./js/*.js', ['js']);
    gulp.watch('./images/*', ['images']);
