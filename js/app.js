@@ -1,7 +1,7 @@
 /* jslint browser: true, esnext: true */
 
-var angular = require('angular');
-var angularRoute = require('angular-route');
+// var angular = require('angular');
+// var angularRoute = require('angular-route');
 require('./factory');
 require('./controllers');
 
