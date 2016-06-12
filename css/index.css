@@ -4,28 +4,51 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-#about-view #myImage {
-  border-radius: 250px;
-  display: block;
-  width: 30vw;
-  margin-left: auto;
-  margin-right: auto; }
-
-#about-view h2 {
-  font-family: "Architects Daughter";
-  font-size: 3vw;
-  margin-left: 5%; }
-
-#about-view .aboutMeStuff {
-  font-family: "Architects Daughter";
-  font-size: 2vw;
-  margin-left: 5%;
-  margin-right: 5%;
+#about-view {
   margin-bottom: 10%; }
+  #about-view #myImage {
+    border-radius: 60%;
+    display: block;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto; }
+  #about-view h2 {
+    font-family: "Architects Daughter";
+    font-size: 3vw;
+    margin-left: 5%; }
+  #about-view .aboutMeStuff {
+    font-family: "Architects Daughter";
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-right: 5%; }
 
 #projects-view {
   margin-left: 5%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  font-family: "Architects Daughter"; }
+  #projects-view h2 {
+    text-align: center;
+    font-size: 1.6em; }
+  #projects-view h3 {
+    font-size: 1.25em; }
+  #projects-view .project-content .projectTitle {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 1%; }
+  #projects-view .project-content .projectLink {
+    font-size: 1em;
+    display: inline-flex;
+    margin-right: 2%;
+    margin-bottom: 1%; }
+  #projects-view .project-content .gitLink {
+    font-size: 1em;
+    display: inline-flex; }
+  #projects-view .project-content .siteDes {
+    font-size: 1.1em; }
+  #projects-view .project-content .devtools {
+    font-size: 1.1em; }
+  #projects-view .project-content .devCollects {
+    font-size: 1.1em; }
 
 #resume-view iframe {
   width: 100%;
@@ -41,6 +64,10 @@ html {
 body {
   margin: 0;
   height: 100%; }
+
+.languages {
+  color: #03718a;
+  text-transform: uppercase; }
 
 header {
   margin-bottom: 5%; }
@@ -64,8 +91,8 @@ header {
       margin-right: 2%;
       margin-left: 2%; }
     header #navbar button {
-      background-color: #130094;
-      color: #f06500;
+      background-color: #1d02d2;
+      color: #f7b483;
       font-size: 1.5vw;
       font-family: "Press Start 2P";
       border-radius: 10px; }
