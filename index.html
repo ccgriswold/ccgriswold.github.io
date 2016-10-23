@@ -2,12 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8" />
+
+    <meta name="description" content="Hello, my name is Clayton Griswold and I am a UI/UX Front End Web Developer. Welcome to my site. Please contact me if I can answer any questions you might have. Thanks for checking me out." />
+
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="google-site-verification" content="HkRWxqRedLFNpnoNI0Sicxa0yPYi7MZMRFWitAHiP8g" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Clayton+Griswold Clay+Griswold claytongriswold.com ">
+    <meta name="author" content="Clayton Griswold">
 
     <title>Clayton Griswold</title>
     <link rel="icon" type="image/jpeg" href="./images/IMG_1981.jpeg" />
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Faster+One|Kalam|Ravi+Prakash|Press+Start+2P" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Radley|Ravi+Prakash|Press+Start+2P" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link href="css/index.css" rel="stylesheet" type="text/css" />
 
     <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -16,29 +24,148 @@
   </head>
   <!-- End Head section -->
 
-  <body ng-app="SiteApp">
+  <body>
     <header>
       <div id="top">
         <h1>Clayton Griswold</h1>
-        <h2>Front End Engineer</h2>
       </div>
       <nav id="navbar" role="navigation">
-        <a href="#/about"><button class="navOps">About</button></a>
-        <a href="#/resume"><button class="navOps">Resume</button></a>
-        <a href="#/projects"><button class="navOps">Projects</button></a>
-        <a href="https://github.com/ccgriswold" target="_blank"><button class="navOps">GitHub</button></a>
-        <a href="http://linkedin.com/in/claytongriswold" target="_blank"><button class="navOps">LinkedIn</button></a>
+        <div id="floatcontainer">
+          <a class="headerOps" href="#skills"><button>Skills</button></a>
+          <a class="headerOps" href="#education"><button>Education</button></a>
+          <a class="headerOps" href="#projects"><button>Projects</button></a>
+          <a class="headerOps" href="#contact"><button>Contact</button></a>
+        </div>
       </nav>
     </header>
 
-    <main id="content" ng-view>
-      <!-- Different pages pulled from pageviews folder through angular -->
+    <main class="content">
+      <!-- About me Section -->
+      <div id="about-view" class="projectsview">
+        <h2 class="sectionTitle">About Me</h2>
+        <div id="AboutMeSection" class="TheSections">
+          <img id="myImage" src="./images/IMG_3949.jpg" />
+          <p class="aboutMeStuff">
+            <br/>
+            Hello, My name is Clayton and I am a web developer focusing on front end development.  I have a passion for building production quality web applications that deliver pleasant straightforward experiences for users. Please feel free to explore the site to gain a better understanding of who I am and what skills I can offer.
+          </p>
+          <p class="aboutMeStuff">
+            I am currently seeking employment opportunities as a Front End Web Developer.  Given the opportunity I will prove that I am a hard worker dedicated to continually improving my knowledge base of web development both professionally and in my own time.  I invite you to connect with me via one of the platforms listed below if you feel I would fit well with your team.
+          </p>
+          <p class="aboutMeStuff">
+            My first experience with HTML5, CSS3, and JavaScript started in August of 2010, but since then I have continued to increase my enjoyment and passion for all aspects of web development.  This past spring I was given the opportunity to enroll in the first cohort of The Iron Yard - Charlotte completing the rigorously indepth 12 week immersion program in Front End Engineering focusing on JavaScript and MVC framworks.  Before my Iron Yard education I was barely able to explain the difference between IDs and classes and their hierarchical order, but now I am able to create full web applications using AngularJS, BackBoneJS, and EmberJS frameworks.
+          </p>
+          <p class="aboutMeStuff" id="aboutMeBottom">
+            As a developer, I am self motivated and willing to work and learn whatever it takes to complete any project I am assigned, be it working independently or collaberating on a team. Along with working on projects, I participate in local web developer Meetups.  From these Meetups I have been able to expand and improve my current development skill stack thanks to the variety of lectures offered and the interactions with the knowledgeable and skilled developers presenting and attending those Meetups.  The passion from everyone I have met within the developer community continues to drive me to improve my skills and give back to the open-source communtiy whenever I can.
+            <br/><br/>
+          </p>
+        </div>
+      </div>
+
+      <div id="skills" class="projectsview">
+        <h2 class="sectionTitle" id="skillSectionTitle">Skill Set</h2>
+        <div id="SkillSection" class="TheSections">
+          <h4>Listed below is my developer skill set:</h4>
+          <ul>
+            <!-- <img class="skill" id="coreLang" alt="HTML5, CSS3, JS" src="./images/html5css3js.png" /> -->
+            <a href="http://sass-lang.com/" target="_blank"><img class="skill" id="sass" alt="SASS" src="./images/sass.svg" /></a>
+            <a href="http://bourbon.io" target="_blank"><img class="skill" id="bourbon" alt="Bourbon" src="./images/bourbon.png" /></a>
+            <a href="http://neat.bourbon.io" target="_blank"><img class="skill" id="bourbonneat" alt="Bourbon Neat" src="./images/bourbonneat.svg" /></a>
+            <a href="https://git-scm.com/" target="_blank"><img class="skill" id="git" alt="Git" src="./images/git.png" /></a>
+            <a href="https://www.npmjs.com/" target="_blank"><img class="skill" id="npm" alt="NPM" src="./images/npm.png" /></a>
+            <a href="http://gulpjs.com/" target="_blank"><img class="skill" id="gulp" alt="Gulp" src="./images/gulp.png" /></a>
+            <a href="https://angularjs.org/" target="_blank"><img class="skill" id="angular" atl="AngularJS" src="./images/angularjs.png" /></a>
+            <a href="http://backbonejs.org/" target="_blank"><img class="skill" id="backbone" atl="BackboneJS" src="./images/backbone.png" /></a>
+            <a href="http://emberjs.com/" target="_blank"><img class="skill" id="ember" alt="EmberJS" src="./images/emberjs.png" /></a>
+            <a href="https://jquery.com/" target="_blank"><img class="skill" id="jquery" alt="JQuery" src="./images/jquery.png" /></a>
+            <a href="http://underscorejs.org/" target="_blank"><img class="skill" id="underscore" alt="UnderScoreJS" src="./images/underscore.png" /></a>
+            <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started" target="_blank"><img class="skill" id="ajax" alt="API/AJAX" src="./images/ajax.png" /></a>
+            <a href="https://travis-ci.org/" target="_blank"><img class="skill" id="travis" alt="TravisCI" src="./images/travisci.png" /></a>
+          </ul>
+        </div>
+      </div>
+
+      <div id="education" class="projectsview">
+        <h2 class="sectionTitle" id="educationTitle">Education</h2>
+        <div class="TheSections" id="edSec">
+          <div class="EducationSection">
+            <h3 class="EdLocal">The Iron Yard - Charlotte, NC</h3>
+            <h4 class="EdDegree">JavaScript and MVC Frameworks</h4>
+            <p class="classDuration">May 2016</p>
+            <!-- <ul>
+              <li>Immersive 12 week Front End Engineering course that taught the most current design practices and industry standard build tools to create production quality web applications.</li>
+              <li>Worked solo as well as collaberated with peers in building large scale web applications.</li>
+            </ul> -->
+          </div>
+          <div class="EducationSection">
+            <h3 class="EdLocal">Clemson University - Clemson, SC</h3>
+            <h4 class="EdDegree">Political Science &amp; Business Administration</h4>
+            <p class="classDuration">May 2013</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="projectsview">
+        <h2 class="sectionTitle">Noteworthy Projects</h2>
+        <div class="TheSections">
+          <div class="project-content">
+            <h3 class="projectTitle"><a href="http://southernfavor.gift" target="_blank">Southern Favor</a></h3>
+            <p class="siteDes">
+              Southern Favor is a custom wooden gift box purchasing site built with custom code on a Shopify e-commerce platform.
+              <!-- <br/> -->
+              Click the <strong>title</strong> or the <strong>image</strong> below to visit this site. Being a private site the source code is unable to be shared.
+            </p>
+            <a href="http://southernfavor.gift" target="_blank"><img class="siteImage" src="./images/sfsite.png" /></a>
+          </div>
+
+          <div class="project-content">
+            <h3 class="projectTitle"><a href="http://flamingtires.surge.sh" target="_blank">Flaming Tires Auction</a></h3>
+            <p class="siteDes">
+              Flaming Tires Auction is a classic car auction site built as a single page, multiple view application utilizing an AngularJS JavaScript framework, compiled with TravisCI, and published through Surge.
+              Click the <strong>title</strong> or the <strong>image</strong> below to visit this site. Visit the <a class="githubVisit" href="https://github.com/ccgriswold/ReadySetAuction" target="_blank">source code on GitHub</a>.
+            </p>
+            <a href="http://flamingtires.surge.sh" target="_blank"><img class="siteImage" src="./images/ftsite.png" /></a>
+          </div>
+          <br/>
+          <!--
+          <div class="project-content">
+            <h3 class="projectTitle">Weight Of The World News</h3>
+            <h4 class="projectLink"><a class="linkIt" href="http://weightofworldnews.surge.sh" target="_blank">WeightOfWorldNews.surge.sh</a></h4>
+            <p class="siteDes">
+              Weight of the World News is a breaking news app built using AngularJS JavaScript framework, compiled with TravisCI, and published through Surge. This site allows users to keep up with the current news through a variety of news APIs such as Aljazeera, BBC, Buzzfeed, CNN, and New York Times.
+            </p>
+          </div> -->
+        </div>
+      </div>
+
+      <div id="contact" class="projectsview">
+        <h2 class="sectionTitle">Connect With Me</h2>
+        <div id="contactLinks" class="TheSections">
+          <a href="tel:18439868000"><img src="./images/phone.png" alt="Icon for Phone"/></a>
+          <a href="mailto:ccgriswold@gmail.com?subject=Connecting from Site"><img src="./images/mail.png" alt="Icon for Email"/></a>
+          <a target="_blank" href="https://linkedin.com/in/claytongriswold"><img src="./images/linkedin.png" alt="Icon for LinkedIn page."></a>
+          <a target="_blank" href="https://github.com/ccgriswold"><img src="./images/github2.png" alt="Icon for GitHub."></a>
+          <a href="./images/ClaytonGriswoldResume.pdf" target="_blank"><img src="./images/resumeicon.png" alt="Icon for Resume."></a>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <p>
-        UI built with the sharp angles of AngularJS
-      </p>
+      <div class="footerCollection">
+        <h1>Thanks for visiting. Site created for your enjoyment by and promotion for Clayton Griswold.</h1>
+      </div>
+      <!-- <div class="footerCollection">
+        <a href="mailto:ccgriswold@gmail.com?subject=Connecting via Site"><h2>Email: </h2>
+        <a href="mailto:ccgriswold@gmail.com"><h3>ccgriswold@gmail.com</h3></a></a>
+      </div>
+      <div class="footerCollection">
+        <a href="tel:18439868000">
+          <h2>Phone: </h2><h3>1(843)986-8000</h3></a>
+      </div>
+      <div class="footerCollection">
+        <a href="./images/ClaytonGriswoldResume.pdf" target="_blank">
+          <h2>Clayton's Resume</h2></a>
+      </div> -->
     </footer>
 
   </body>
